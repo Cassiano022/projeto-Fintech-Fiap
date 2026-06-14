@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurum - Dashboard</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-icon">₿</span>
+            <span class="logo-text">Aurum<span>.</span></span>
+        </div>
+        <nav class="nav-links">
+            <a href="#" class="active">Dashboard</a>
+            <a href="#">Nova Conta</a>
+            <a href="#">Transações</a>
+            <a href="#">Análise</a>
+            <a href="#">Transferir</a>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        
+        <section class="top-section">
+            <div class="balance-card">
+                <p class="card-label">SALDO TOTAL DISPONÍVEL</p>
+                <h1 class="main-balance">R$ 127.849<span class="cents">,32</span></h1>
+                <div class="balance-stats">
+                    <div class="stat-item">
+                        <p>Receitas (30d)</p>
+                        <span class="stat-value positive">+ R$ 45.200,00</span>
+                    </div>
+                    <div class="stat-item">
+                        <p>Despesas (30d)</p>
+                        <span class="stat-value negative">- R$ 18.750,00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side-cards">
+                <div class="info-card">
+                    <div class="card-header">
+                        <div>
+                            <p class="card-sub">Cartão Platinum</p>
+                            <h3>•••• 8274</h3>
+                        </div>
+                        <div class="card-icon-yellow">💳</div>
+                    </div>
+                    <div class="card-footer">
+                        <div>
+                            <p class="card-sub">Limite Disponível</p>
+                            <p class="card-bold">R$ 35.000,00</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="card-sub">Fatura Atual</p>
+                            <p class="card-bold yellow">R$ 8.240,00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card justify-center">
+                    <p class="card-sub">Investimentos</p>
+                    <h2 class="invest-value">R$ 284.950</h2>
+                    <span class="badge-green">+12,4% este mês</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="bottom-section">
+            
+            <div class="activity-section">
+                <div class="section-header">
+                    <h2>Atividades Recentes</h2>
+                    <a href="#" class="see-all">Ver todas →</a>
+                </div>
+
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-info">
+                            <div class="icon-placeholder"></div>
+                            <div>
+                                <h4>Transferência para Maria Silva</h4>
+                                <p>Transferência • Hoje, 14:32</p>
+                            </div>
+                        </div>
+                        <span class="activity-amount negative">R$ -2.500,00</span>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-info">
+                            <div class="icon-placeholder video-icon">▶</div>
+                            <div>
+                                <h4>Pagamento Netflix Premium</h4>
+                                <p>Entretenimento • Hoje, 09:15</p>
+                            </div>
+                        </div>
+                        <span class="activity-amount negative">R$ -55,90</span>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-info">
+                            <div class="icon-placeholder"></div>
+                            <div>
+                                <h4>Depósito Salário – Empresa XYZ</h4>
+                                <p>Receita • Ontem, 08:00</p>
+                            </div>
+                        </div>
+                        <span class="activity-amount positive">R$ +12.800,00</span>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-info">
+                            <div class="icon-placeholder cart-icon">🛒</div>
+                            <div>
+                                <h4>Compra Amazon.com</h4>
+                                <p>Compras • 20 Abr, 16:45</p>
+                            </div>
+                        </div>
+                        <span class="activity-amount negative">R$ -347,82</span>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-info">
+                            <div class="icon-placeholder chart-icon">📈</div>
+                            <div>
+                                <h4>Rendimento Poupança</h4>
+                                <p>Investimento • 18 Abr, 00:00</p>
+                            </div>
+                        </div>
+                        <span class="activity-amount positive">R$ +125,43</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="goals-section">
+                <h2 class="section-title">Metas Financeiras</h2>
+                
+                <div class="goals-list">
+                    <div class="goal-item">
+                        <div class="goal-header">
+                            <h4>Viagem Europa</h4>
+                            <span>61%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress progress-green" style="width: 61%;"></div>
+                        </div>
+                        <p class="goal-details">R$ 15.200 de R$ 25.000</p>
+                    </div>
+
+                    <div class="goal-item">
+                        <div class="goal-header">
+                            <h4>Reserva Emergência</h4>
+                            <span>93%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress progress-yellow" style="width: 93%;"></div>
+                        </div>
+                        <p class="goal-details">R$ 28.000 de R$ 30.000</p>
+                    </div>
+
+                    <div class="goal-item">
+                        <div class="goal-header">
+                            <h4>Novo Carro</h4>
+                            <span>49%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress progress-blue" style="width: 49%;"></div>
+                        </div>
+                        <p class="goal-details">R$ 42.000 de R$ 85.000</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>

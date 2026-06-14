@@ -1,0 +1,353 @@
+/* RESET E CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #0b0d0c;
+    color: #ffffff;
+    padding: 0 40px 40px 40px;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 1px solid #161917;
+    margin-bottom: 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    color: #00bf71;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-text {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.logo-text span {
+    color: #cc9933;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #838986;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+.nav-links a.active {
+    color: #ffffff;
+    background-color: #005f38;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+/* CONTAINER PRINCIPAL */
+.dashboard-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* SEÇÃO SUPERIOR (Grid de Saldos e Cartões) */
+.top-section {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 30px;
+}
+
+/* Card Verde de Saldo Principal */
+.balance-card {
+    background-color: #0a5c36;
+    border-radius: 24px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 320px;
+}
+
+.card-label {
+    color: #a3d9c1;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.main-balance {
+    font-size: 56px;
+    font-weight: 700;
+    margin-top: 15px;
+    letter-spacing: -1px;
+}
+
+.main-balance .cents {
+    font-size: 36px;
+    color: #a3d9c1;
+}
+
+.balance-stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    border-top: 1px solid #107345;
+    padding-top: 25px;
+}
+
+.stat-item p {
+    color: #a3d9c1;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.stat-value {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.stat-value.positive { color: #ffffff; }
+.stat-value.negative { color: #ffffff; opacity: 0.9; }
+
+/* Coluna Direita (Cartão e Investimentos) */
+.side-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.info-card {
+    background-color: #121413;
+    border: 1px solid #1c1f1d;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 148px;
+}
+
+.info-card.justify-center {
+    justify-content: center;
+    gap: 10px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card-sub {
+    color: #666d6a;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.card-bold {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.card-bold.yellow {
+    color: #cca34d;
+}
+
+.card-icon-yellow {
+    background-color: #2b2618;
+    color: #cca34d;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.invest-value {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.badge-green {
+    background-color: #0c261a;
+    color: #00bf71;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+/* SEÇÃO INFERIOR (Atividades e Metas) */
+.bottom-section {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 40px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.bottom-section h2 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.see-all {
+    color: #00bf71;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Lista de Atividades */
+.activity-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.activity-item {
+    background-color: #121413;
+    border: 1px solid #1c1f1d;
+    border-radius: 16px;
+    padding: 18px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activity-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.icon-placeholder {
+    width: 44px;
+    height: 44px;
+    background-color: #1c1f1d;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-placeholder.video-icon { color: #3b82f6; }
+.icon-placeholder.cart-icon { color: #a855f7; }
+.icon-placeholder.chart-icon { color: #ef4444; }
+
+.activity-info h4 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.activity-info p {
+    color: #666d6a;
+    font-size: 13px;
+}
+
+.activity-amount {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.activity-amount.positive { color: #00bf71; }
+.activity-amount.negative { color: #ffffff; }
+
+/* Metas Financeiras */
+.goals-section .section-title {
+    margin-bottom: 25px;
+}
+
+.goals-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.goal-item {
+    background-color: #121413;
+    border: 1px solid #1c1f1d;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.goal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.goal-header h4 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.goal-header span {
+    color: #666d6a;
+    font-size: 13px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    background-color: #1c1f1d;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.progress-green { background-color: #00bf71; }
+.progress-yellow { background-color: #cca34d; }
+.progress-blue { background-color: #0077c2; }
+
+.goal-details {
+    color: #666d6a;
+    font-size: 13px;
+}
